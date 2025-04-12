@@ -22,8 +22,7 @@ const apiLevelAuthentication = async (req, res, next) => {
     }
 
     const profile = await getProfileById(tokenData.data.profileId);
-
-    if (!profile.success) {
+    if (!profile.data) {
       const error = new AppError("User not found", null, 404);
       return formatResponse(res, error, error.statusCode);
     }
