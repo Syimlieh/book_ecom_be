@@ -1,0 +1,476 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Book Nest - Backend Application",
+    "description": "Backend application",
+    "version": "1.0.0"
+  },
+  "host": "localhost:5000",
+  "basePath": "/",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "securityDefinitions": {
+    "jwt": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "Authorization"
+    }
+  },
+  "paths": {
+    "/api/v1/books/": {
+      "get": {
+        "tags": [
+          "Books"
+        ],
+        "summary": "Get All Books",
+        "description": "",
+        "parameters": [
+          {
+            "name": "title",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "description": "Book title"
+          },
+          {
+            "name": "category",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "description": "Book category"
+          },
+          {
+            "name": "author",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "description": "Book author"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "description": "Number of items per page"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "description": "Page number"
+          },
+          {
+            "name": "order_by",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "description": "Default: updatedAt"
+          },
+          {
+            "name": "order_direction",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "description": "Possible values: [ASC, DESC]"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Books"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "required": true,
+            "description": "Authorization token"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "description": "Add new book",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "example": "string"
+                },
+                "author": {
+                  "type": "string",
+                  "example": "string"
+                },
+                "publisher": {
+                  "type": "string",
+                  "example": "string"
+                },
+                "category": {
+                  "type": "string",
+                  "example": "string"
+                },
+                "description": {
+                  "type": "string",
+                  "example": "string"
+                },
+                "price": {
+                  "type": "number",
+                  "example": 0
+                },
+                "rating": {
+                  "type": "number",
+                  "example": 0
+                },
+                "stock": {
+                  "type": "number",
+                  "example": 0
+                },
+                "tags": {
+                  "type": "array",
+                  "example": [
+                    "string"
+                  ],
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "weight": {
+                  "type": "number",
+                  "example": 0
+                },
+                "dimensions": {
+                  "type": "object",
+                  "properties": {
+                    "length": {
+                      "type": "number",
+                      "example": 0
+                    },
+                    "width": {
+                      "type": "number",
+                      "example": 0
+                    },
+                    "height": {
+                      "type": "number",
+                      "example": 0
+                    }
+                  }
+                },
+                "images": {
+                  "type": "array",
+                  "example": [
+                    "string"
+                  ],
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "discountPercentage": {
+                  "type": "number",
+                  "example": 10
+                },
+                "reviews": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "userId": {
+                        "type": "string",
+                        "example": "string"
+                      },
+                      "rating": {
+                        "type": "number",
+                        "example": 0
+                      },
+                      "comment": {
+                        "type": "string",
+                        "example": "string"
+                      },
+                      "date": {
+                        "type": "string",
+                        "example": "2023-10-01T00:00:00Z"
+                      }
+                    }
+                  }
+                },
+                "thumbnail": {
+                  "type": "string",
+                  "example": "string"
+                },
+                "availabilityStatus": {
+                  "type": "string",
+                  "example": "string"
+                },
+                "returnPolicy": {
+                  "type": "string",
+                  "example": "string"
+                },
+                "shippingInformation": {
+                  "type": "string",
+                  "example": "string"
+                },
+                "shippingCost": {
+                  "type": "number",
+                  "example": 10
+                },
+                "minimumOrderQuantity": {
+                  "type": "number",
+                  "example": 0
+                }
+              },
+              "required": [
+                "title",
+                "author",
+                "publisher",
+                "category",
+                "description",
+                "price",
+                "rating",
+                "stock",
+                "tags",
+                "weight",
+                "dimensions",
+                "images",
+                "discountPercentage",
+                "reviews",
+                "thumbnail",
+                "availabilityStatus",
+                "returnPolicy",
+                "shippingInformation",
+                "shippingCost",
+                "minimumOrderQuantity"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/v1/books/{id}": {
+      "get": {
+        "tags": [
+          "Books"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Book Id"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/v1/auth/signup": {
+      "post": {
+        "tags": [
+          "Authentication"
+        ],
+        "summary": "User SignUp",
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "description": "Create user",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "fullName": {
+                  "type": "string",
+                  "example": "Full name"
+                },
+                "email": {
+                  "type": "string",
+                  "example": "user@book.in"
+                },
+                "phone": {
+                  "type": "string",
+                  "example": "9898989898"
+                },
+                "password": {
+                  "type": "string",
+                  "example": "password"
+                },
+                "confirmPassword": {
+                  "type": "string",
+                  "example": "password"
+                }
+              },
+              "required": [
+                "fullName",
+                "email",
+                "phone",
+                "password",
+                "confirmPassword"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/v1/auth/login": {
+      "post": {
+        "tags": [
+          "Authentication"
+        ],
+        "summary": "login API",
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "example": "user@gmail.com"
+                },
+                "password": {
+                  "type": "string",
+                  "example": "password"
+                }
+              },
+              "required": [
+                "email",
+                "password"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/v1/auth/me": {
+      "get": {
+        "tags": [
+          "Authentication"
+        ],
+        "summary": "Get logged In user details",
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "required": true,
+            "description": "Authorization token"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/v1/order/": {
+      "post": {
+        "tags": [
+          "Orders"
+        ],
+        "summary": "Create a new order",
+        "description": "",
+        "parameters": [
+          {
+            "name": "order",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "bookId": {
+                        "type": "string",
+                        "example": "663b6cdd5d7a42199aab9624"
+                      },
+                      "quantity": {
+                        "type": "number",
+                        "example": 2
+                      }
+                    }
+                  }
+                },
+                "totalAmount": {
+                  "type": "number",
+                  "example": 400
+                },
+                "paymentMethod": {
+                  "type": "string",
+                  "example": "PAY_ON_DELIVERY || UPI || CARD"
+                },
+                "shippingAddress": {
+                  "type": "object",
+                  "properties": {
+                    "fullName": {
+                      "type": "string",
+                      "example": "John Doe"
+                    },
+                    "email": {
+                      "type": "string",
+                      "example": "john@example.com"
+                    },
+                    "phone": {
+                      "type": "string",
+                      "example": "9876543210"
+                    },
+                    "address": {
+                      "type": "string",
+                      "example": "123 Street"
+                    },
+                    "state": {
+                      "type": "string",
+                      "example": "MH"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}

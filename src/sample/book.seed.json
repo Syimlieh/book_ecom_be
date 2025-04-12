@@ -1,0 +1,176 @@
+[
+    {
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "publisher": "Penguin Random House",
+        "category": "Self-Help",
+        "description": "An easy & proven way to build good habits and break bad ones.",
+        "price": 18.99,
+        "discountPercentage": 12,
+        "rating": 4.9,
+        "stock": 15,
+        "tags": ["habits", "productivity", "self-improvement"],
+        "weight": 0.8,
+        "dimensions": { "width": 14.0, "height": 21.0, "depth": 2.5 },
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "30-day return policy",
+        "shippingCost": 10,
+        "shippingInformation": "Ships in 2 days",
+        "minimumOrderQuantity": 1,
+        "reviews": [
+          {
+            "rating": 5,
+            "comment": "Life-changing read!",
+            "date": "2024-03-15T12:00:00Z",
+            "reviewerName": "David Green"
+          }
+        ],
+        "images": ["https://m.media-amazon.com/images/I/81F90H7hnML._AC_UF1000,1000_QL80_.jpg"],
+        "thumbnail": "https://m.media-amazon.com/images/I/81F90H7hnML._AC_UF1000,1000_QL80_.jpg"
+      },
+      {
+        "title": "Clean Code",
+        "author": "Robert C. Martin",
+        "publisher": "Prentice Hall",
+        "category": "Programming",
+        "description": "A handbook of agile software craftsmanship for writing clean, maintainable code.",
+        "price": 34.95,
+        "discountPercentage": 15,
+        "rating": 4.8,
+        "stock": 8,
+        "tags": ["clean code", "software", "development"],
+        "weight": 1.1,
+        "dimensions": { "width": 17.0, "height": 23.0, "depth": 3.0 },
+        "availabilityStatus": "Low Stock",
+        "returnPolicy": "15-day return policy",
+        "shippingCost": 12,
+        "shippingInformation": "Ships within 1 business day",
+        "minimumOrderQuantity": 1,
+        "reviews": [
+          {
+            "rating": 5,
+            "comment": "Essential for all developers.",
+            "date": "2024-01-20T08:45:00Z",
+            "reviewerName": "Sophia Ray"
+          }
+        ],
+        "images": ["https://m.media-amazon.com/images/I/51E2055ZGUL.jpg"],
+        "thumbnail": "https://m.media-amazon.com/images/I/51E2055ZGUL.jpg"
+      },
+      {
+        "title": "The Psychology of Money",
+        "author": "Morgan Housel",
+        "publisher": "Harriman House",
+        "category": "Finance",
+        "description": "Timeless lessons on wealth, greed, and happiness.",
+        "price": 16.00,
+        "discountPercentage": 8,
+        "rating": 4.7,
+        "stock": 20,
+        "tags": ["money", "psychology", "finance"],
+        "weight": 0.6,
+        "dimensions": { "width": 13.5, "height": 20.0, "depth": 1.8 },
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "30-day return policy",
+        "shippingCost": 11,
+        "shippingInformation": "Ships within 3 days",
+        "minimumOrderQuantity": 1,
+        "reviews": [
+          {
+            "rating": 4,
+            "comment": "Interesting perspective on finance.",
+            "date": "2024-03-10T14:30:00Z",
+            "reviewerName": "Liam Black"
+          }
+        ],
+        "images": ["https://m.media-amazon.com/images/I/81Dky+tD+pL.jpg"],
+        "thumbnail": "https://m.media-amazon.com/images/I/81Dky+tD+pL.jpg"
+      },
+      {
+        "title": "Deep Work",
+        "author": "Cal Newport",
+        "publisher": "Grand Central Publishing",
+        "category": "Productivity",
+        "description": "Rules for focused success in a distracted world.",
+        "price": 20.00,
+        "discountPercentage": 10,
+        "rating": 4.6,
+        "stock": 12,
+        "tags": ["focus", "work", "productivity"],
+        "weight": 0.7,
+        "dimensions": { "width": 14.5, "height": 21.5, "depth": 2.0 },
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "15-day return policy",
+        "shippingCost": 10,
+        "shippingInformation": "Ships in 2-3 business days",
+        "minimumOrderQuantity": 1,
+        "reviews": [
+          {
+            "rating": 5,
+            "comment": "Highly motivating read!",
+            "date": "2024-03-22T15:00:00Z",
+            "reviewerName": "Jane Miller"
+          }
+        ],
+        "images": ["https://m.media-amazon.com/images/I/81JJ7fyyKyS.jpg"],
+        "thumbnail": "https://m.media-amazon.com/images/I/81JJ7fyyKyS.jpg"
+      },
+      {
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "publisher": "HarperOne",
+        "category": "Fiction",
+        "description": "A fable about following your dreams and discovering your destiny.",
+        "price": 14.99,
+        "discountPercentage": 5,
+        "rating": 4.5,
+        "stock": 30,
+        "tags": ["fiction", "spiritual", "classic"],
+        "weight": 0.5,
+        "dimensions": { "width": 13.0, "height": 19.5, "depth": 1.6 },
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "30-day return policy",
+        "shippingCost": 9,
+        "shippingInformation": "Ships in 1 day",
+        "minimumOrderQuantity": 1,
+        "reviews": [
+          {
+            "rating": 4,
+            "comment": "Inspirational and easy to read.",
+            "date": "2024-02-14T17:45:00Z",
+            "reviewerName": "Alice Freeman"
+          }
+        ],
+        "images": ["https://m.media-amazon.com/images/I/81UGPuNl7kL._UF1000,1000_QL80_.jpg"],
+        "thumbnail": "https://m.media-amazon.com/images/I/81UGPuNl7kL._UF1000,1000_QL80_.jpg"
+      },
+      {
+        "title": "Sapiens",
+        "author": "Yuval Noah Harari",
+        "publisher": "Harper",
+        "category": "History",
+        "description": "Explores the history of humankind from the Stone Age to the modern age.",
+        "price": 22.50,
+        "discountPercentage": 11,
+        "rating": 4.9,
+        "stock": 10,
+        "tags": ["history", "evolution", "science"],
+        "weight": 0.95,
+        "dimensions": { "width": 15.0, "height": 23.5, "depth": 2.8 },
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "20-day return policy",
+        "shippingCost": 15,
+        "shippingInformation": "Ships within 24 hours",
+        "minimumOrderQuantity": 1,
+        "reviews": [
+          {
+            "rating": 5,
+            "comment": "Mind-opening and brilliantly written.",
+            "date": "2024-03-10T12:15:00Z",
+            "reviewerName": "Noah Walker"
+          }
+        ],
+        "images": ["https://m.media-amazon.com/images/I/713jIoMO3UL.jpg"],
+        "thumbnail": "https://m.media-amazon.com/images/I/713jIoMO3UL.jpg"
+      }            
+]
